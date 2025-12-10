@@ -71,6 +71,7 @@ body {
 /* Hero */
 .hero {
     position: relative;
+    z-index: 2; 
     min-height: 70vh;
     display: flex;
     align-items: center;
@@ -97,14 +98,21 @@ body {
     z-index: -1;
     animation: orbitar 16s linear infinite;
 }
-
+/* Logo gigante detrás del texto */
 .hero::before {
-    width: 240px;
-    height: 240px;
-    background: #ffb347;
-    top: -60px;
-    right: 15%;
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 420px;
+    opacity: 0.06;
+    z-index: 1;
+    pointer-events: none;
 }
+
+
 
 .hero::after {
     width: 280px;
@@ -116,6 +124,8 @@ body {
 }
 
 .hero-content {
+    position: relative;
+    z-index: 2;
     max-width: 780px;
     text-align: left;
 }

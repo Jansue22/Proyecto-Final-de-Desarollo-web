@@ -15,24 +15,33 @@ function actualizarSaludo() {
 
 actualizarSaludo();
 
-// Lógica del FAQ ● abrir/cerrar respuestas
+// --- Lógica del FAQ: abrir/cerrar respuestas ---
 const faqItems = document.querySelectorAll(".faq-item");
 
 faqItems.forEach((item) => {
     const btn = item.querySelector(".faq-question");
     btn.addEventListener("click", () => {
+        // Cerrar otros, si quieres que solo uno esté abierto:
+        // faqItems.forEach(i => { if (i !== item) i.classList.remove("activo"); });
+
         item.classList.toggle("activo");
     });
 });
 
-// Simulación de envío de formulario
+// --- Simulación de envío de formulario ---
 function enviarFormulario(event) {
     event.preventDefault();
 
     const mensajeEstado = document.getElementById("mensaje-estado");
     const nombre = document.getElementById("nombre").value.trim();
 
-    mensajeEstado.textContent =
-        (nombre ? `${nombre}, ` : "") +
-        "tu interés ha sido registrado exitosamente. Pronto rec
+    if (mensajeEstado) {
+        mensajeEstado.textContent =
+            (nombre ? `${nombre}, ` : "") +
+            "tu interés ha sido registrado exitosamente. Pronto recibirás más información por correo electrónico.";
+        mensajeEstado.style.color = "#16a34a";
+    }
 
+    event.target.reset();
+    return false;
+}

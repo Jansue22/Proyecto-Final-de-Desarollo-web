@@ -84,8 +84,18 @@ body {
 .hero-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(135deg, #0f172a 0%, #1d3557 40%, #457b9d 100%);
+
+    /* Fondo con logo + degradado */
+    background-image: 
+        url("logo.png"),
+        linear-gradient(135deg, #0f172a 0%, #1d3557 40%, #457b9d 100%);
+    background-repeat: no-repeat, no-repeat;
+    background-position: center, center;
+    background-size: 420px, cover;
+
+    opacity: 0.96;       /* puedes bajar a 0.9 si quieres ver más el logo */
     z-index: -2;
+    pointer-events: none;
 }
 
 .hero::before,

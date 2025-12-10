@@ -93,7 +93,7 @@ body {
     background-position: center, center;
     background-size: 420px, cover;
 
-    opacity: 0.96;       /* puedes bajar a 0.9 si quieres ver más el logo */
+    opacity: 0.9;      /* menos intenso */
     z-index: -2;
     pointer-events: none;
 }

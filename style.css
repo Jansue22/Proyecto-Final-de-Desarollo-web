@@ -85,23 +85,19 @@ body {
     position: absolute;
     inset: 0;
 
-    /* Fondo con logo enorme + degradado */
-    background-image:
-        url("logo.png"),
-        linear-gradient(135deg, #0f172a 0%, #1d3557 40%, #457b9d 100%);
-    
-    background-repeat: no-repeat, no-repeat;
-    background-position: center center, center;
-    
-    /* Tamaño del logo */
-    background-size: 1200px, cover;
+    background-image: url("logo.png");
+    background-color: #1d3557;   /* Fondo azul */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 1200px;
 
-    /* Suavidad total */
-    opacity: 0.36; 
-    mix-blend-mode: soft-light; luminosity;
+    opacity: 0.35;
+    mix-blend-mode: overlay;
 
     z-index: -2;
     pointer-events: none;
+}
+
 }
 
 

@@ -469,4 +469,11 @@ textarea:focus {
         padding: 3rem 1.5rem;
     }
 }
+/* Tamaño del logo en el header */
+.logo-img {
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+    margin-right: 10px;
+}
 

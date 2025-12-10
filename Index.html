@@ -1,1 +1,232 @@
-# Proyecto-Final-de-Desarollo-web
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Jansue Colón Díaz" />
+    <meta name="description" content="Puente de Enseñanza Digital: curso para jóvenes y universitarios que desean mejorar sus destrezas tecnológicas." />
+    <title>Puente de Enseñanza Digital | Jansue Colón Díaz</title>
+
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Navegación -->
+    <header class="main-header">
+        <div class="logo">
+            <!-- Si luego subes un logo.png, puedes usar <img src="logo.png" alt="Logo Puente de Enseñanza"> -->
+            <span class="logo-icon">🧠</span>
+            <span class="logo-text">Puente de Enseñanza Digital</span>
+        </div>
+
+        <nav class="nav">
+            <a href="#inicio">Inicio</a>
+            <a href="#curso">Curso</a>
+            <a href="#publico">¿A quién va dirigido?</a>
+            <a href="#contenido">Contenido</a>
+            <a href="#inscripcion">Inscripción</a>
+        </nav>
+    </header>
+
+    <!-- Sección Hero -->
+    <section id="inicio" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p id="saludo" class="saludo"></p>
+            <h1>Aprende tecnología de forma simple, clara y práctica.</h1>
+            <p class="hero-subtitle">
+                Plataforma creada por <strong>Jansue Colón Díaz</strong> para acompañar a jóvenes adultos 
+                y universitarios que desean sentirse más seguros usando la tecnología en sus estudios y vida diaria.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#curso" class="btn btn-primary">Ver información del curso</a>
+                <a href="#inscripcion" class="btn btn-outline">Quiero participar</a>
+            </div>
+
+            <div class="hero-tag">
+                Duración: <strong>4 semanas</strong> · Modalidad: <strong>virtual</strong> · Nivel: <strong>principiantes</strong>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección sobre el curso -->
+    <section id="curso" class="section">
+        <div class="section-inner">
+            <h2>Sobre el curso</h2>
+            <p>
+                <strong>Puente de Enseñanza Digital</strong> es un curso introductorio en el que aprenderás 
+                a usar herramientas tecnológicas que te ayudan en la universidad: organización, trabajos, 
+                comunicación y seguridad básica en línea.
+            </p>
+
+            <div class="cards-grid">
+                <article class="card card-animada">
+                    <h3>Objetivo principal</h3>
+                    <p>
+                        Reducir la brecha digital y que puedas sentirte en control de tu computadora, tablet o móvil
+                        mientras estudias o trabajas.
+                    </p>
+                </article>
+
+                <article class="card card-animada">
+                    <h3>Metodología</h3>
+                    <p>
+                        Clases cortas, ejemplos reales, ejercicios guiados y acompañamiento paso a paso. 
+                        Todo explicado en un lenguaje sencillo.
+                    </p>
+                </article>
+
+                <article class="card card-animada">
+                    <h3>Resultados esperados</h3>
+                    <p>
+                        Al terminar el curso podrás crear cuentas, manejar archivos, usar herramientas en la nube 
+                        y navegar con mayor seguridad.
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Público -->
+    <section id="publico" class="section section-alt">
+        <div class="section-inner">
+            <h2>¿A quién va dirigido?</h2>
+
+            <ul class="chip-list">
+                <li class="chip">Jóvenes adultos</li>
+                <li class="chip">Estudiantes universitarios</li>
+                <li class="chip">Personas con poca experiencia tecnológica</li>
+                <li class="chip">Mentores que desean apoyar a otros</li>
+            </ul>
+
+            <p>
+                No hay requisito de edad ni experiencia previa. Solo necesitas acceso a una computadora o tablet
+                y ganas de aprender.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contenido del curso -->
+    <section id="contenido" class="section">
+        <div class="section-inner">
+            <h2>Contenido por semanas</h2>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>Semana 1: Fundamentos digitales</h3>
+                    <p>Partes básicas de la computadora, manejo de archivos, carpetas y almacenamiento en la nube.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Semana 2: Herramientas para estudiar mejor</h3>
+                    <p>Correo electrónico, calendarios, videoconferencias y organización de trabajos.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Semana 3: Seguridad y privacidad</h3>
+                    <p>Contraseñas seguras, estafas comunes, respaldo de información y uso responsable de redes sociales.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Semana 4: Proyecto final</h3>
+                    <p>Aplicar todo lo aprendido en un pequeño proyecto personal guiado.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ con JS -->
+    <section class="section section-alt">
+        <div class="section-inner">
+            <h2>Preguntas frecuentes</h2>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    ¿Cuánto tiempo debo dedicar semanalmente?
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Aproximadamente de 2 a 3 horas por semana entre clases, lecturas y prácticas.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    ¿Necesito conocimientos previos de programación?
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>No. El curso está diseñado para principiantes. Todo se explica desde cero.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    ¿Obtengo alguna evidencia de participación?
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>
+                        Sí, al finalizar puedes descargar un certificado digital de participación para adjuntar a tu portafolio.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Inscripción -->
+    <section id="inscripcion" class="section">
+        <div class="section-inner section-inscripcion">
+            <h2>Inscríbete o solicita información</h2>
+            <p>
+                Completa el formulario y me comunicaré contigo con más detalles sobre fechas, horarios y requisitos.
+            </p>
+
+            <form class="inscripcion-form" onsubmit="return enviarFormulario(event);">
+                <div class="form-group">
+                    <label for="nombre">Nombre completo</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="correo">Correo electrónico</label>
+                    <input type="email" id="correo" name="correo" placeholder="tucorreo@ejemplo.com" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="tipo">Soy...</label>
+                    <select id="tipo" name="tipo" required>
+                        <option value="">Selecciona una opción</option>
+                        <option value="universitario">Estudiante universitario</option>
+                        <option value="joven-adulto">Joven adulto</option>
+                        <option value="mentor">Mentor / facilitador</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje">¿Qué esperas aprender?</label>
+                    <textarea id="mensaje" name="mensaje" rows="3" placeholder="Cuéntame brevemente..."></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-full">
+                    Enviar interés
+                </button>
+
+                <p id="mensaje-estado" class="mensaje-estado"></p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <p>
+            Proyecto desarrollado por <strong>Jansue Colón Díaz</strong> para el curso
+            <strong>COMP 2051 – Desarrollo Web</strong>.
+        </p>
+        <p>
+            Contacto: <a href="mailto:tucorreo@ejemplo.com">tucorreo@ejemplo.com</a>
+            · GitHub: <a href="https://github.com/Jansue22" target="_blank">Jansue22</a>
+        </p>
+    </footer>
+</body>
+</html>
+

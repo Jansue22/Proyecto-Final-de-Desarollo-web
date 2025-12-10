@@ -104,39 +104,7 @@ body {
 }
 
 
-.hero::before,
-.hero::after {
-    content: "";
-    position: absolute;
-    border-radius: 999px;
-    filter: blur(40px);
-    opacity: 0.45;
-    z-index: -1;
-    animation: orbitar 16s linear infinite;
-}
-/* Logo gigante detrás del texto */
-.hero::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-image: url("logo.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 420px;
-    opacity: 0.06;
-    z-index: 1;
-    pointer-events: none;
-}
 
-
-
-.hero::after {
-    width: 280px;
-    height: 280px;
-    background: #72efdd;
-    bottom: -80px;
-    left: 12%;
-    animation-delay: -4s;
 }
 
 .hero-content {

@@ -68,40 +68,61 @@ body {
     width: 100%;
 }
 
-/* Hero */
+/* ========================== */
+/*        HERO ORIGINAL       */
+/* ========================== */
+
 .hero {
     position: relative;
-    z-index: 2; 
+    z-index: 1;
     min-height: 70vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 40%, #334155 100%); /* FONDO AZUL OSCURO */
     padding: 4rem 8vw;
     overflow: hidden;
     color: #ffffff;
 }
 
+/* LOGO GIGANTE COMO BACKGROUND */
 .hero-overlay {
     position: absolute;
     inset: 0;
-
-    background-color: #0a2540; /* azul oscuro */
-    background-image: url("logo.png");
+    background-image:
+        url("logo.png");
     background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 1200px;
-
-    opacity: 0.25;
-    mix-blend-mode: normal;
-
-    z-index: -1;
+    background-position: center;
+    background-size: 1100px; /* TAMANO DEL LOGO - AJUSTABLE */
+    opacity: 0.15; /* VISIBILIDAD DEL LOGO */
+    z-index: 0;
     pointer-events: none;
 }
 
+/* Círculos suaves decorativos */
+.hero::before,
+.hero::after {
+    content: "";
+    position: absolute;
+    border-radius: 999px;
+    filter: blur(80px);
+    opacity: 0.25;
 }
 
+.hero::before {
+    width: 400px;
+    height: 400px;
+    background: #38bdf8;
+    top: -50px;
+    left: -80px;
+}
 
-
+.hero::after {
+    width: 350px;
+    height: 350px;
+    background: #818cf8;
+    bottom: -60px;
+    right: -40px;
 }
 
 .hero-content {

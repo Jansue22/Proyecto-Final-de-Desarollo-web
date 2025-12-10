@@ -85,21 +85,18 @@ body {
     position: absolute;
     inset: 0;
 
-    background-image:
-        url("logo.png"),
-        linear-gradient(135deg, #0a2540 0%, #0f3b61 50%, #164a80 100%);
-
+    background-color: #0a2540; /* azul oscuro */
+    background-image: url("logo.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 1200px;
 
-    opacity: 0.35;
-    mix-blend-mode: overlay; /* IMPORTANTE */
+    opacity: 0.25;
+    mix-blend-mode: normal;
 
-    z-index: -2;
+    z-index: -1;
     pointer-events: none;
 }
-
 
 }
 

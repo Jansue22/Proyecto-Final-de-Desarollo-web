@@ -79,7 +79,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, #0f172a 0%, #1e293b 40%, #334155 100%); /* FONDO AZUL OSCURO */
+    background: linear-gradient(135deg, #07234e 0%, #0f3b69 50%, #1b5fa8 100%);
     padding: 4rem 8vw;
     overflow: hidden;
     color: #ffffff;
@@ -110,6 +110,17 @@ body {
     border: none;            
     background: none;       
 }
+box-shadow: 0 0 30px rgba(255, 255, 255, 0.25);
+}
+@keyframes float {
+    0% { transform: translateY(-50%) translateX(0); }
+    50% { transform: translateY(-55%) translateX(0); }
+    100% { transform: translateY(-50%) translateX(0); }
+}
+
+.hero-floating img {
+    animation: float 6s ease-in-out infinite;
+}
 
 /* LOGO GIGANTE COMO BACKGROUND */
 .hero-overlay {
@@ -123,6 +134,7 @@ body {
     opacity: 0.15; /* VISIBILIDAD DEL LOGO */
     z-index: 0;
     pointer-events: none;
+    box-shadow: inset 0 0 120px rgba(255, 255, 255, 0.08);
 }
 
 /* Círculos suaves decorativos */
@@ -203,6 +215,15 @@ body {
     cursor: pointer;
     text-decoration: none;
     transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease, color 0.18s ease, border-color 0.18s ease;
+}
+.btn-primary {
+    transition: 0.3s ease;
+    box-shadow: 0 4px 18px rgba(255, 166, 0, 0.4);
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(255, 166, 0, 0.6);
 }
 
 .btn-primary {

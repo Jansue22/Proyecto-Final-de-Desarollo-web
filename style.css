@@ -89,16 +89,16 @@ body {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    width: 180px;           
+    width: 220px;           
     z-index: 3;
 }
 
 .hero-floating.left {
-    left: 40px;              /* Ajustar posición izquierda */
+    left: 45px;              /* Ajustar posición izquierda */
 }
 
 .hero-floating.right {
-    right: 40px;             /* Ajustar posición derecha */
+    right: 35px;             /* Ajustar posición derecha */
 }
 
 .hero-floating img {
